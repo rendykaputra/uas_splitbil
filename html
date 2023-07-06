@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- my CSS -->
+  <link rel="stylesheet" href="index.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <h3 id="main-title">SPLI<br>TTER</h3>
+
+  <div class="container">
+
+    <section id="left-col">
+      <div class="content-left bill">
+        <p class="title-text">Bill</p>
+        <div class="input-left">
+          <img src="images/icon-dollar.svg" class="input-icon" alt="">
+          <input type="number" placeholder="0" id="bill" class="input">
+        </div>
+      </div>
+      <div class="content-left tip-group">
+        <p class="title-text">Select Tip %</p>
+        <div class="tip-select">
+          <button class="tip tip-button" value="5">5%</button>
+          <button class="tip tip-button" value="10">10%</button>
+          <button value="15" class="tip tip-button">15%</button>
+          <button value="25" class="tip tip-button">25%</button>
+          <button value="50" class="tip tip-button">50%</button>
+          <input type="number" name="custom" id="tip-input"class="tip tip-input input" placeholder="Custom">
+        </div>
+      </div>
+      <div class="content-left people">
+        <div class="people-input-group">
+          <p class="title-text">Number of People</p>
+          <p class="alert-hide" id="input-alert">Can't be zero</p>
+        </div>
+        <div class="input-left people-alert">
+          <img src="images/icon-person.svg" class="input-icon" alt="">
+          <input type="number" placeholder="0" id="people" class="input">
+        </div>
+      </div>
+    </section>
+
+    <section id="right-col">
+
+      <div class="content-right">
+        <div class="text-group-right">
+          <p class="title-text">Tip Amount</p>
+          <p class="title-text-mini">/ person</p>
+        </div>
+        <h2 class="text-result" id="tip-total">$0.00</h2>
+      </div>
+      <div class="content-right">
+        <div class="text-group-right">
+          <p class="title-text">Total</p>
+          <p class="title-text-mini">/ person</p>
+        </div>
+        <h2 class="text-result" id="bill-total">$0.00</h2>
+      </div>
+
+      <a href="" class="reset-btn" id="reset-btn">RESET</a>
+
+    </section>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://instagram.com/thecandraboy/">candra haikal</a>.
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
